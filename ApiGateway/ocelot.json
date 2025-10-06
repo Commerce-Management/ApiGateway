@@ -1,0 +1,23 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{ "Host": "app-service-identity", "Port": 5002 }],
+      "UpstreamPathTemplate": "/identity/{everything}",
+      "UpstreamHttpMethod": ["GET", "POST", "PUT"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "app-service-communication", "Port": 5003 }
+      ],
+      "UpstreamPathTemplate": "/friend/{everything}",
+      "UpstreamHttpMethod": ["GET", "POST"]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://gateway.example.com"
+  }
+}
