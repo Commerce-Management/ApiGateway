@@ -3,9 +3,11 @@
     {
       "DownstreamPathTemplate": "/api/v1/{everything}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [{ "Host": "app-service-identity", "Port": 5002 }],
+      "DownstreamHostAndPorts": [
+        { "Host": "localhost", "Port": 5087 }
+      ],
       "UpstreamPathTemplate": "/identity/{everything}",
-      "UpstreamHttpMethod": ["GET", "POST", "PUT"]
+      "UpstreamHttpMethod": ["GET", "POST", "PUT", "DELETE"]
     },
     {
       "DownstreamPathTemplate": "/api/{everything}",
