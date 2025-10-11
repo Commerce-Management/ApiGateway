@@ -10,13 +10,13 @@
       "UpstreamHttpMethod": ["GET", "POST", "PUT", "DELETE"]
     },
     {
-      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamPathTemplate": "/api/v1/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
-        { "Host": "app-service-communication", "Port": 5003 }
+        { "Host": "localhost", "Port": 5194 }
       ],
-      "UpstreamPathTemplate": "/friend/{everything}",
-      "UpstreamHttpMethod": ["GET", "POST"]
+      "UpstreamPathTemplate": "/shop/{everything}",
+      "UpstreamHttpMethod": ["GET", "POST", "PUT", "DELETE"]
     }
   ],
   "GlobalConfiguration": {
