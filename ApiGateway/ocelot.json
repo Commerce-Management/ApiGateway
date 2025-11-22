@@ -3,28 +3,28 @@
     {
       "DownstreamPathTemplate": "/api/v1/{everything}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [{ "Host": "app-service-identity", "Port": 5003 }],
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5087 }],
       "UpstreamPathTemplate": "/identity/{everything}",
       "UpstreamHttpMethod": ["GET","POST","PUT","DELETE"]
     },
     {
       "DownstreamPathTemplate": "/api/v1/{everything}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [{ "Host": "app-service-shop", "Port": 5004 }],
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5194 }],
       "UpstreamPathTemplate": "/shop/{everything}",
       "UpstreamHttpMethod": ["GET","POST","PUT","DELETE"]
     },
     {
       "DownstreamPathTemplate": "/api/v1/{everything}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [{ "Host": "app-service-product", "Port": 5005 }],
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5011 }],
       "UpstreamPathTemplate": "/product/{everything}",
       "UpstreamHttpMethod": ["GET","POST","PUT","DELETE"]
     },
     {
       "DownstreamPathTemplate": "/api/v1/{everything}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [{ "Host": "app-service-category", "Port": 5006 }],
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5293 }],
       "UpstreamPathTemplate": "/category/{everything}",
       "UpstreamHttpMethod": ["GET","POST","PUT","DELETE"]
     },
@@ -38,7 +38,7 @@
     {
       "DownstreamPathTemplate": "/api/v1/{everything}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [{ "Host": "app-service-order", "Port": 5002 }],
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5012 }],
       "UpstreamPathTemplate": "/order/{everything}",
       "UpstreamHttpMethod": ["GET","POST","PUT","DELETE"]
     }
